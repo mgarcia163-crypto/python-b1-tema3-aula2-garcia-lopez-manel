@@ -1,4 +1,5 @@
 # geometry.py
+import math
 
 
 def square_area(side_length: float) -> float:
@@ -12,7 +13,7 @@ def square_area(side_length: float) -> float:
     - float: the area of the square.
     """
     # Write here your code
-    pass
+    return math.pow(side_length,2)
 
 
 def rectangle_area(base_length: float, height: float) -> float:
@@ -27,7 +28,8 @@ def rectangle_area(base_length: float, height: float) -> float:
     - float: the area of the rectangle.
     """
     # Write here your code
-    pass
+    return base_length * height
+
 
 
 def triangle_area(base_length: float, height: float) -> float:
@@ -42,8 +44,8 @@ def triangle_area(base_length: float, height: float) -> float:
     - float: the area of the triangle.
     """
     # Write here your code
-    pass
-
+    return (base_length * height) / 2
+    
 
 def circle_area(radius: float) -> float:
     """
@@ -56,4 +58,4 @@ def circle_area(radius: float) -> float:
     - float: the area of the circle
     """
     # Write here your code
-    pass
+    return math.pi * math.pow(radius,2)
